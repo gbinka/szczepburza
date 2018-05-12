@@ -11,19 +11,23 @@
 	#header-logo
 	{
 		background-color: #203581;
-		padding: 0px !important;
+		padding: 15px;
 		margin: 0px !important;
 	}
-	.szczepburza
+	
+	/* telefon+ */
+	@media all and (min-width:768px) 
 	{
-		font-size: 80px;
-		letter-spacing: 3px;
-		text-align: center;
+		#logo-mobile{display:none;}
 	}
+	
 	
 	/* telefon i mniejsze */
 	@media all and (max-width:767.99px) 
-	{.szczepburza{display: none;}}
+	{
+		#logo-max{display:none;}
+	}
+	
 </style>
 
 
@@ -60,7 +64,8 @@
 				<center>
 					<div id="header-logo">
 						
-			
+						<img class="img-responsive" id="logo-max" src="\wp-content\uploads\2018\05\logo-naglowek.png">			
+						<img class="img-responsive" id="logo-mobile" src="\wp-content\uploads\2018\05\logo-naglowek-mobile.png">			
 							
 								
 					</div>
@@ -86,6 +91,7 @@
 						</nav>
 					</div>
 				</div><!--.main-navigation-->
+								<!--<?php include '\wordpress\wp-content\themes\bootstrap-basic\GG\Modyfikacje\slider.php'?> -->
 			</header>
 			
 			
